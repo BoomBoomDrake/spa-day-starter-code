@@ -63,6 +63,18 @@ public class SpaDayController {
             }
         }
 
+        ArrayList<String> nailPolishColors = new ArrayList<>();
+        nailPolishColors.add("red");
+        nailPolishColors.add("blue");
+        nailPolishColors.add("yellow");
+        nailPolishColors.add("green");
+
+        model.addAttribute("name", name);
+        model.addAttribute("skintype", skintype);
+        model.addAttribute("manipedi", manipedi);
+        model.addAttribute("appropriateFacials",appropriateFacials);
+        model.addAttribute("nailPolishColors", nailPolishColors);
+
         return "menu";
     }
 }

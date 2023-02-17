@@ -24,3 +24,13 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+footer {
+    display: flex;
+    height: 40px;
+}
+
+.nailColor {
+    width: 25%;
+    height: 100%;
+}
