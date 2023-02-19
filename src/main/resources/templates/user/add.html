@@ -8,17 +8,18 @@
 <h1>Add</h1>
 <form method="post" action="/user">
     <label>Username:
-        <input type="text" th:field="${user.username}" placeholder="username">
+        <input type="text" name="username" placeholder="username">
     </label>
     <label>Email:
-        <input type="email" th:field="${user.email}" placeholder="username">
+        <input type="email" name="email" placeholder="email">
     </label>
     <label>Password:
-        <input type="password" th:field="${user.password}" placeholder="username">
+        <input type="password" name="password" placeholder="password">
     </label>
-    <label>Password:
-        <input type="password" th:field="${user.password}" placeholder="username">
+    <label>Verify Password:
+        <input type="password" name="verify" placeholder="password">
     </label>
+    <input type="submit" value="Submit">
 
 </form>
 </body>
