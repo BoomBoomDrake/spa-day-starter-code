@@ -5,6 +5,21 @@
     <title></title>
 </head>
 <body>
+<h1>Add</h1>
+<form method="post" action="/user">
+    <label>Username:
+        <input type="text" th:field="${user.username}" placeholder="username">
+    </label>
+    <label>Email:
+        <input type="email" th:field="${user.email}" placeholder="username">
+    </label>
+    <label>Password:
+        <input type="password" th:field="${user.password}" placeholder="username">
+    </label>
+    <label>Password:
+        <input type="password" th:field="${user.password}" placeholder="username">
+    </label>
 
+</form>
 </body>
 </html>
