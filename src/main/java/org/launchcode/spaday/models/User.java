@@ -1,12 +1,24 @@
 package org.launchcode.spaday.models;
 
+import java.util.Date;
+
 public class User {
+
+    private int id;
+    private static int nextId = 1;
+    private Date dateJoined;
     private String username;
     private String email;
     private String password;
 
     public User() {
+        id = nextId;
+        nextId++;
+        dateJoined = new Date();
+    }
 
+    public int getId() {
+        return id;
     }
 
     public String getUsername() {
