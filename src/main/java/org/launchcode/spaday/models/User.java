@@ -21,6 +21,10 @@ public class User {
         return id;
     }
 
+    public String getDateJoined() {
+        return dateJoined.toString();
+    }
+
     public String getUsername() {
         return username;
     }

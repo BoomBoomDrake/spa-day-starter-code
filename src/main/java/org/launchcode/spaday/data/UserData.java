@@ -5,17 +5,17 @@ import org.launchcode.spaday.models.User;
 import java.util.ArrayList;
 
 public class UserData {
-    private ArrayList<User> userList = new ArrayList<>();
+    private static ArrayList<User> userList = new ArrayList<>();
 
-    public ArrayList<User> getAll() {
+    public static ArrayList<User> getAll() {
         return userList;
     }
 
-    public void add(User user) {
+    public static void add(User user) {
         userList.add(user);
     }
 
-    public User getById(int id) {
+    public static User getById(int id) {
 
         for ( User user : userList) {
             if (user.getId() == id) {
