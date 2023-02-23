@@ -22,7 +22,10 @@ public class UserController {
     public String processAddUserForm(Model model, @ModelAttribute @Valid User user, Errors errors, String verify) {
         model.addAttribute("user", user);
 
-        if (errors.hasErrors() || !user.getPassword().equals(verify)) {
+        if (errors.hasErrors()) {
+            return "user/add";
+        } else if (!user.getPassword().equals(verify)) {
+            model.addAttribute("passwordMatchError", "Passwords do not match!");
             return "user/add";
         } else {
             return "user/index";
