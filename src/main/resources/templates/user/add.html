@@ -35,9 +35,9 @@
         <div>
             <label>
                 Verify Password:
-                <input type = 'password' name = 'verify'>
+                <input type = 'password' name = 'verifyPassword'>
             </label>
-            <p th:text="${passwordMatchError}"></p>
+            <p th:errors="${user.verifyPassword}"></p>
         </div>
 
         <div>
